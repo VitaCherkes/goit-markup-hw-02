@@ -1,0 +1,58 @@
+
+/* основний колір тексту #757575 */
+/*другорядний колір #212121 */
+/* білий #FFFFFF;*/
+/* акцент: #2196F3 */
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3; 
+}
+
+body {
+background-color: #F5F5F5;
+color:var(--primary-text-color) ;
+}
+
+
+ul {
+    list-style: none;
+}
+/* site-nav */
+.site-nav .link {
+color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+/* auth-nav */
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+/* section */
+.section-title{
+    color: var(--title-text-color)
+}
+
+/* features */
+.features .title{
+    color: var(--title-text-color);
+}
+
+ /*команда */
+ .name{
+     color: var(--title-text-color);
+ }
+ /* address */
+ .address .maps{
+     color: #FFFFFF;
+ }
+ .address .link{
+     color: rgba(255, 255, 255, 0.6);
+     ;
+ }
