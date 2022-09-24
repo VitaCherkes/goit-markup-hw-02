@@ -76,11 +76,12 @@ color: var(--title-text-color);
 .button.primary{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    cursor: pointer;
 }
 .button.secondary{
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
-cursor: pointer;
+
 }
 .button.secondary:hover,
 .button.secondary:focus{
