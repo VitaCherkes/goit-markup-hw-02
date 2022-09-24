@@ -14,7 +14,13 @@ body {
 background-color: #F5F5F5;
 color:var(--primary-text-color) ;
 }
-
+/* WebStudio */
+.accent{
+    color: var(--accent-color);
+}
+.accent-studio{
+    color: #000000;
+}
 
 ul {
     list-style: none;
