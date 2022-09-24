@@ -6,7 +6,8 @@
 :root {
 --primary-text-color: #757575;
 --title-text-color: #212121;
---accent-color: #2196F3; 
+--accent-color: #2196F3;
+--primary-white-color:#F5F4FA; 
 }
 
 body {
@@ -56,3 +57,32 @@ color: var(--title-text-color);
      color: rgba(255, 255, 255, 0.6);
      ;
  }
+.address .link:hover,
+.address .link:focus{
+    color: var(--accent-color);
+}
+/* hero ( виділила фон, щоб було видно текст */
+.hero{
+    background-color: #2F303A;
+}
+.hero .hero-title{
+    color: #FFFFFF;
+}
+/* button */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+}
+.button.primary{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+.button.secondary{
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+cursor: pointer;
+}
+.button.secondary:hover,
+.button.secondary:focus{
+    background-color: var(--accent-color);
+}
