@@ -10,10 +10,15 @@
 --title-text-color: #212121;
 --accent-color: #2196F3;
 --primary-white-color:hsl(250, 37%, 97%); 
+--background:#FFFFFF;
+--black:#000000;
+--color-text: #2F303A;
+--primary-color:#F5F4FA;
+--button-color:#188CE8;
 }
 
 body {
-background-color: #F5F5F5 ; 
+background-color:var(--background) ; 
 color:var(--primary-text-color) ;
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
@@ -24,13 +29,16 @@ letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 .accent-studio{
-    color: #000000; 
+    color: var(--black); 
 }
 .accent, .accent-studio{
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
+}
+.footer .accent-studio{
+    color: var(--background);
 }
 
 ul {
@@ -39,7 +47,7 @@ ul {
 }
 /* site-nav */
 .header{
-    background-color: #FFFFFF;
+    background-color:var(--background);
 }
 .site-nav .link {
 color: var(--title-text-color);
@@ -68,10 +76,10 @@ text-decoration: none;
 }
 /* hero ( виділила фон, щоб було видно текст */
 .hero, .footer{
-    background-color:#2F303A ;
+    background-color:var(--color-text) ;
 }
 .hero .hero-title{
-    color: #FFFFFF;
+    color: var(--background);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -81,7 +89,7 @@ text-transform: uppercase;
 }
 
 /* section */
-.section-title{
+.section-title,.section-title-h{
 color: var(--title-text-color);
 font-weight: 700;
 font-size: 36px;
@@ -89,7 +97,31 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 }
-
+.section-title-h{
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+.title{
+    color: var(--title-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+}
+.title-p{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
 /* features */
 .features .title{
     color: var(--title-text-color);
@@ -102,7 +134,7 @@ text-transform: uppercase;
 
  /*команда */
  .section-team{
-background-color: #F5F4FA;
+background-color: var(--primary-color);
  }
  .name{
      color: var(--title-text-color);
@@ -110,19 +142,24 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
  }
+ .team{
+     background-color: var(--background);
+ }
  /* address */
  .address .maps{
-     color: #FFFFFF;
+     color:var(--background);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
+font-style: normal;
  }
  .address .link{
-     color: rgba(255, 255, 255, 0.6);
+     color: var(--background);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 text-decoration: none;
+font-style: normal;
  }
 .address .link:hover,
 .address .link:focus{
@@ -133,6 +170,7 @@ text-decoration: none;
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
+    font-family: Roboto;
 }
 .button.primary{
     background-color: var(--accent-color);
@@ -145,10 +183,12 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+font-family: Roboto;
 }
 .button.primary:hover,
 .button.primary:focus{
-    background-color: #188CE8;
+    background-color:var(--button-color);
+    
 }
 /* кнопки портфоліо */
 .button.secondary{
@@ -163,6 +203,12 @@ text-align: center;
 .button.secondary:hover,
 .button.secondary:focus{
     background-color: var(--accent-color);
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+color:var(--background);
 }
 /* портфолио */
 .portfolio {
