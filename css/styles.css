@@ -15,6 +15,7 @@
 --color-text: #2F303A;
 --primary-color:#F5F4FA;
 --button-color:#188CE8;
+--color:rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -153,8 +154,8 @@ font-size: 14px;
 line-height: 1.71;
 font-style: normal;
  }
- .address .link{
-     color: var(--background);
+.link{
+     color: var(--color)
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
